@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco SENAI - Simulador de Empréstimo</title>
+
+</head>
+<body>
+
+<div class="container" id="appContainer">
+    <h2>Simulador de Empréstimo - Banco SENAI</h2>
+    
+    <form id="loanForm">
+        <div class="form-group">
+            <label for="clientName">Nome Completo (Mín. 5 caracteres):</label>
+            <input type="text" id="clientName" required>            
+        </div>
+
+        <div class="form-group">
+            <label for="birthDate">Data de Nascimento:</label>
+            <input type="date" id="birthDate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="clientCPF">CPF (Apenas 11 números):</label>
+            <input type="text" id="clientCPF"  required>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="loanAmount">Valor do Empréstimo (R$):</label>
+            <input type="number" id="loanAmount" step="0.01" required>
+        </div>
+
+        <div class="form-group">
+            <label for="interestRate">Taxa de Juros Simples (%):</label>
+            <input type="number" id="interestRate" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="installments">Quantidade de Parcelas:</label>
+            <input type="number" id="installments" >
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="btnCalculate">Calcular Empréstimo</button>
+    </form>
+
+    <div class="result-box" id="resultBox">
+        <h3>Resumo da Simulação</h3>
+        <p><strong>Idade Calculada:</strong> <span id="resAge"></span> anos</p>
+        <p><strong>Montante Total com Juros:</strong> R$ <span id="resTotalAmount"></span></p>
+        
+
+
+        <button class="btn btn-danger" id="btnReset" style="margin-top: 20px;">Nova Simulação</button>
+    </div>
+</div>
+
+<script>
+    // Todo o código JavaScript orientado a objetos deve ser implementado aqui ou em um arquivo separado.
+    // Lembre-se de criar classes para gerenciar o Cliente, a Simulação e os limites de tentativas (máx 3).
+</script>
+
+</body>
+</html>
