@@ -30,6 +30,11 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="dataHoje">Data de hoje:</label>
+                    <input type="date" id="dataHoje" value="today" required>
+                </div>
+
+                <div class="form-group">
                     <label for="clientCPF">CPF (Apenas 11 números):</label>
                     <input type="text" id="clientCPF" required>
 
@@ -50,27 +55,31 @@
                     <input type="number" id="installments">
                 </div>
 
-                <div class="form-group">
-                    <label for="dataHoje">Data de hoje:</label>
-                    <input type="date" id="dataHoje" value="today" required>
-                </div>
 
-                <button type="submit" class="btn btn-primary" id="btnCalculate" onclick="coletaDados()">Calcular Empréstimo</button>
+                <button type="button" class="btn btn-primary" id="btnCalculate" onclick="coletaDados()">Calcular
+                    Empréstimo</button>
             </form>
         </div>
-    </div>
-    <div class="result-box" id="resultBox">
-        <h3>Resumo da Simulação</h3>
-        <p><strong>Idade Calculada:</strong> <span id="resAge"></span> anos</p>
-        <p><strong>Montante Total com Juros:</strong> R$ <span id="resTotalAmount"></span></p>
+        <div class="result-box" id="resultBox">
+            <h3>Resumo da Simulação</h3>
+            <p><strong>Idade Calculada:</strong> <span id="resAge"></span> ...anos</p>
+            <p><strong>Montante Total com Juros:</strong> R$... <span id="resTotalAmount"></span></p>
+            <button class="btn btn-danger" id="btnReset" style="margin-top: 20px;">Nova Simulação</button>
+        </div>
 
-
-
-        <button class="btn btn-danger" id="btnReset" style="margin-top: 20px;">Nova Simulação</button>
     </div>
 
 
 
+    <!-- <ul>
+        <li>Valor da Parcela 1: R$17.14, data de vencimento:30</li>
+        <li>Valor da Parcela 2: R$17.14, data de vencimento:60</li>
+        <li>Valor da Parcela 3: R$17.14, data de vencimento:90</li>
+        <li>Valor da Parcela 4: R$17.14, data de vencimento:120</li>
+        <li>Valor da Parcela 5: R$17.14, data de vencimento:150</li>
+        <li>Valor da Parcela 6: R$17.14, data de vencimento:180</li>
+        <li>Valor da Parcela 7: R$17.14, data de vencimento:210</li>
+    </ul> -->
     <script>
         // Todo o código JavaScript orientado a objetos deve ser implementado aqui ou em um arquivo separado.
         // Lembre-se de criar classes para gerenciar o Cliente, a Simulação e os limites de tentativas (máx 3).
