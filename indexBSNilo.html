@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Banco SENAI - Simulador de Empréstimo</title>
 </head>
 
@@ -49,7 +50,12 @@
                     <input type="number" id="installments">
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="btnCalculate">Calcular Empréstimo</button>
+                <div class="form-group">
+                    <label for="dataHoje">Data de hoje:</label>
+                    <input type="date" id="dataHoje" value="today" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="btnCalculate" onclick="coletaDados()">Calcular Empréstimo</button>
             </form>
         </div>
     </div>

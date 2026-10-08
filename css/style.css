@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgb(243, 242, 242);
 }
@@ -67,4 +67,8 @@
     border-radius: 3px;
     color: white;
     margin-top: 10px;
+}
+
+#loanForm button:active{
+    background-color: #010e83;
 }
